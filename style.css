@@ -1,0 +1,54 @@
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-gap: 0.1em;
+}
+
+header, footer {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+@media all and (max-width: 350px) {
+aside, article {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 5;
+}
+
+header, nav, aside, article, footer {
+    background: orange;
+    font-size: 20px; font-family: Georgia;
+    color: rgb(252, 247, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+
+aside, article{
+    padding: 1vw;
+}
+.menu {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+    margin: 5px;
+
+
